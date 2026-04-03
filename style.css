@@ -1,0 +1,9 @@
+/* style.css */
+.site-title {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 48px; /* adjust to your preference */
+}
