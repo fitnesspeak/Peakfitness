@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PEAK | Mohamed Khallafallah</title>
 <link rel="stylesheet" href="style.css">
-</head>
-
 <style>
 body {
   margin: 0;
@@ -15,20 +13,52 @@ body {
   color: white;
 }
 
-/* HERO */
+/* HERO HEADER WITH PHOTO */
 header {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #000, #111);
   text-align: center;
+
+  /* Background photo */
+  background-image: url('1.jpeg'); /* your uploaded photo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative; /* for overlay */
 }
 
+/* Dark overlay to improve text readability */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+  z-index: 1;
+}
+
+/* Make text appear above overlay */
+header h1,
+header .tagline,
+header .btn {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header title */
 h1 {
   font-size: 60px;
   letter-spacing: 3px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 span {
@@ -127,7 +157,7 @@ footer {
   <h1>PEAK <span>FITNESS</span></h1>
   <div class="tagline">By Mohamed Khallafallah</div>
   <p class="tagline">No excuses. Just results.</p>
-  <a class="btn" href="https://wa.me/201XXXXXXXXX">Start Your Transformation</a>
+  <a class="btn" href="https://wa.me/201122301703">Start Your Transformation</a>
 </header>
 
 <section class="section">
@@ -158,7 +188,7 @@ footer {
 
 <footer>
   <p>Follow me on Instagram</p>
-  <a href="https://instagram.com/khalafallah74" style="color:#00ff88;">@yourusername</a>
+  <a href="https://instagram.com/khalafallah74" style="color:#00ff88;">Mohaed Elgendy</a>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/201122301703">Chat</a>
