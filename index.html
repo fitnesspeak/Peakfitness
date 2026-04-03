@@ -72,7 +72,7 @@ span {
 }
 
 .btn {
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 15px 40px;
   background: #00ff88;
   color: black;
@@ -80,10 +80,23 @@ span {
   font-weight: bold;
   border-radius: 4px;
   transition: 0.3s;
+  display: inline-block;
 }
 
 .btn:hover {
   background: white;
+  color: black;
+}
+
+/* Specific style for Google Form button */
+.btn-form {
+  background-color: #4285F4;
+  color: white;
+}
+
+.btn-form:hover {
+  background-color: #3367D6;
+  color: white;
 }
 
 /* SECTIONS */
@@ -147,6 +160,12 @@ footer {
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
+  z-index: 3;
+}
+
+.whatsapp:hover {
+  background: white;
+  color: black;
 }
 </style>
 </head>
@@ -159,12 +178,10 @@ footer {
   <p class="tagline">No excuses. Just results.</p>
   
   <!-- WhatsApp Button -->
-  <a class="btn" href="https://wa.me/201122301703">Start Your Transformation</a>
+  <a class="btn" href="https://wa.me/201122301703" target="_blank">Start Your Transformation</a>
   
-  <!-- Google Form Button - Styled to match your PEAK branding -->
-  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfBzf1Niweg-YN5A-fECs3r5LU5g27wqcIQo0R1gCq_KABH_w/viewform?usp=publish-editor" target="_blank" style="margin-top: 15px; background-color:#4285F4; color:white;">
-    Fill Out Our Form
-  </a>
+  <!-- Google Form Button -->
+  <a class="btn btn-form" href="https://docs.google.com/forms/d/e/1FAIpQLSfBzf1Niweg-YN5A-fECs3r5LU5g27wqcIQo0R1gCq_KABH_w/viewform?usp=publish-editor" target="_blank">Fill Out Our Form</a>
 </header>
 
 <section class="section">
@@ -198,7 +215,7 @@ footer {
   <a href="https://instagram.com/khalafallah74" style="color:#00ff88;">Mohaed Elgendy</a>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/201122301703">Chat</a>
+<a class="whatsapp" href="https://wa.me/201122301703" target="_blank">Chat</a>
 
 </body>
 </html>
